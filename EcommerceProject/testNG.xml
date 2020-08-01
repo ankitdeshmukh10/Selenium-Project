@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite-1" parallel="tests" thread-count="2">
+
+    <test name="Test Case-1">
+
+        <classes>
+
+            <class name="Definition.TestIndex" >
+            </class>
+
+            <class name="Definition.TestMobilePage">
+                <methods>
+                    <exclude name="CompareValueWithDetailsPage"/>
+                </methods>
+            </class>
+
+            <class name="Definition.TestCartPage">
+            </class>
+
+            <class name="Definition.TestLoginPage">
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
